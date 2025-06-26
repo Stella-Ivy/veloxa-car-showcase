@@ -178,7 +178,7 @@ footer .Copyright {
   aside, section {
     float: none;
     width: 100%;
-    height: auto;
+    min-height: auto;
   }
 
   nav {
