@@ -1,0 +1,192 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  position: relative;
+  height: 500px;
+  background: url('https://cdn.bmwblog.com/wp-content/uploads/2016/04/hr-owen-rr-black-badge-showroom-6.jpg') no-repeat center center/cover;
+  color: #3feaf6;
+  text-align: center;
+  padding-top: 150px;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 40px;
+  color: #ff3996;
+}
+header p {
+  font-size: 1.2rem;
+}
+header p:last-of-type {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header img.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0a343f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  z-index: 1000;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-left img {
+  width: 40px;
+  height: 40px;
+}
+.nav-center {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+}
+.nav-right a {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+}
+    .nav-right a:hover {
+  color: #1fe6f0;
+  text-shadow: 0 0 5px #00adb5;
+}
+
+main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+aside {
+  float: left;
+  width: 30%;
+  height: 700px;
+  background: linear-gradient(rgba(255, 255, 255, 0.066), rgba(255,255,255,0.2)),
+    url('https://i.pinimg.com/736x/c6/84/df/c684dfd4907e4005d09b0abfbfdcae30.jpg') no-repeat center right/cover;
+  padding: 20px;
+  border-right: 2px solid #410436;
+}
+
+aside h2 {
+  margin-bottom: 10px;
+   color: #ff0c82;
+}
+
+aside ul {
+  list-style: square;
+  padding-left: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+section {
+  float: left;
+  width: 70%;
+  height: 700px;
+  padding: 20px;
+  background-color: #031627;
+}
+
+section h2 {
+  color: #ff0c82;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.car {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.car img {
+  width: 100px;
+  height: auto;
+  border-radius: 6px;
+}
+
+footer {
+  clear: both;
+  width: auto;
+  background-color: #0a343f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer ul {
+  list-style: none;
+  display: block;
+}
+
+footer li {
+    text-align: right;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+footer li:hover {
+  color: #00adb5;
+}
+
+footer .Disclaimer {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #0d0c0c;
+  padding-bottom: 10px;
+}
+footer .Copyright {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  aside, section {
+    float: none;
+    width: 100%;
+    min-height: auto;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-right a {
+    margin: 10px 5px;
+  }
+}
