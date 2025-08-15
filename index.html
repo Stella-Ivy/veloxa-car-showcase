@@ -362,29 +362,6 @@
         }
 
         /* --- Responsive Design --- */
-        /* (max-width 600px) */
-@media (max-width: 600px) {
-  body {
-    background-color: lightblue;
-    font-size: 14px;
-  }
-}
-
-/* Tablet (601px - 1024px)  */
-@media (min-width: 601px) and (max-width: 1024px) {
-  body {
-    background-color: lightgreen;
-    font-size: 16px;
-  }
-}
-
-/* Desktop (1025px) */
-@media (min-width: 1025px) {
-  body {
-    background-color: white;
-    font-size: 18px;
-  }
-}
         @media (max-width: 768px){
             nav {
                 flex-direction: column;
@@ -427,6 +404,75 @@
         }
 
     </style>
+
+    <style>
+/* --- Existing styles remain unchanged above this line --- */
+
+/* Extra Responsive Tweaks */
+@media (max-width: 1024px) {
+    .character-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .character-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .main-title {
+        font-size: 2.5rem;
+    }
+    .card-content img {
+        width: 120px;
+        height: 120px;
+    }
+    .detail-content {
+        max-width: 90%;
+        padding: 15px;
+    }
+    .full-story-content {
+        padding: 20px;
+        font-size: 14px;
+    }
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+    .footer-col.footer-logo {
+        margin-left: 0;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        width: 100%;
+        gap: 8px;
+        padding: 8px;
+    }
+    nav ul a {
+        font-size: 13px;
+    }
+    .box-icons {
+        gap: 10px;
+    }
+    .character-card {
+        width: 100%;
+    }
+    .main-title {
+        font-size: 2rem;
+    }
+    .detail-content .char-name {
+        font-size: 1.8rem;
+    }
+}
+</style>
+
 </head>
 <body>
 
